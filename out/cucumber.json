@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Provide Reward to new User",
+        "description": "",
+        "id": "reward;provide-reward-to-new-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3368117120,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "New user created and his/her name is Test",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test",
+                  "offset": 37
+                }
+              ],
+              "location": "UserJourneySteps.newUserCreation(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1860635537,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "He/She got reward from Company",
+            "match": {
+              "location": "UserJourneySteps.rewardTransactionExecute()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4715699485,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "His/Her BQA balance should increased by 8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 40
+                }
+              ],
+              "location": "UserJourneySteps.getUserList(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Reward",
+    "description": "",
+    "id": "reward",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/UserJourney.feature",
+    "tags": []
+  }
+]
